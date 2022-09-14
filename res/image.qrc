@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/login-pwd.png</file>
+        <file>image/login-username.png</file>
+        <file>image/qq.png</file>
+        <file>image/qq-hover.png</file>
+        <file>image/qq-old.png</file>
+        <file>image/wb.png</file>
+        <file>image/wb-hover.png</file>
+        <file>image/wb-old.png</file>
+        <file>image/wx.png</file>
+        <file>image/wx-hover.png</file>
+        <file>image/wx-old.png</file>
+        <file>image/close.png</file>
+        <file>image/narrow.png</file>
+        <file>image/close-hover.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,156 @@
+﻿/**
+ * black.css
+ */
+
+* {
+    font-family: "Microsoft YaHei";
+    outline: 0px;
+    color: #DCDCDC;
+}
+
+.QFrame {
+    border:1px solid #242424;
+    border-radius:3px;
+}
+
+.QLineEdit, .QTextEdit{
+    border: none;
+    background-color: #444444;
+}
+
+.QPushButton {
+    border:1px solid #242424;
+    color: #DCDCDC;
+    border-radius: 5px;
+}
+
+#frameBackground {
+    background-color: #444444;
+}
+
+#labelUser {
+    border: none;
+    image: url(:/image/login-username.png);
+}
+
+#labelPassword {
+    border: none;
+    image: url(:/image/login-pwd.png);
+}
+
+/* 忘记按钮 */
+#btnForgetPwd {
+    border: none;
+    color: #9d1212;
+}
+
+#btnForgetPwd:hover {
+    border: none;
+    color: #f73d3d;
+    cursor: pointer;
+}
+
+#btnNarrow {
+    border: none;
+    image: url(:/image/narrow.png);
+}
+
+#btnClose {
+    border: none;
+    image: url(:/image/close.png);
+}
+
+#btnNarrow:hover {
+    border: none;
+    background-color: #777777;
+}
+
+#btnClose:hover {
+    border: none;
+    background-color: #f73d3d;
+    image: url(:/image/close-hover.png);
+}
+
+QCheckBox::indicator {
+    width:15px;
+    height:15px;
+}
+
+QCheckBox::indicator:unchecked {
+    image:url(:/qss/psblack/checkbox_unchecked_disable.png);
+}
+
+QCheckBox::indicator:checked {
+    image:url(:/qss/psblack/checkbox_checked.png);
+}
+
+QCheckBox::indicator:checked:disabled {
+    image:url(:/qss/psblack/checkbox_checked_disable.png);
+}
+
+QCheckBox::indicator:indeterminate {
+    image:url(:/qss/psblack/checkbox_parcial.png);
+}
+
+QCheckBox::indicator:indeterminate:disabled {
+    image:url(:/qss/psblack/checkbox_parcial_disable.png);
+}
+
+#checkBoxKeepPwd {
+    color: #242424;
+}
+
+#checkBoxKeepPwd:hover {
+    color: #848484;
+}
+
+#btnLogin {
+    font-size: 20px;
+    color: #242424;
+}
+
+#btnLogin:hover {
+    font-size: 23px;
+    color: #848484;
+}
+
+#btnWx {
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(:/image/wx.png);
+}
+
+#btnWx:hover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(:/image/wx-hover.png);
+}
+
+#btnQq {
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(:/image/qq.png);
+}
+
+#btnQq:hover {
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(:/image/qq-hover.png);
+}
+
+#btnWb {
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(:/image/wb.png);
+}
+
+#btnWb:hover {
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(:/image/wb-hover.png);
+}
