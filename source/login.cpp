@@ -38,13 +38,6 @@ Login::~Login()
     delete ui;
 }
 
-void Login::paintEvent(QPaintEvent *event)
-{
-    Q_UNUSED(event);
-    QPainter painter(this);
-    painter.setPen(QColor("red")); // 0x242424
-}
-
 void Login::setStyle(const QString &path)
 {
     QFile file(path);

@@ -19,9 +19,6 @@ public:
     Login(QWidget *parent = nullptr);
     ~Login();
 
-protected:
-    virtual void paintEvent(QPaintEvent *event) override;
-
 private:
     void setStyle(const QString &path);
     void mousePressEvent(QMouseEvent* event) override;
