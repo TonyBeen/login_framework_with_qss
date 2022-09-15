@@ -13,6 +13,7 @@ Login::Login(QWidget *parent)
     , ui(new Ui::Login)
 {
     ui->setupUi(this);
+    setAttribute(Qt::WA_TranslucentBackground); // 设置窗口背景透明，否则会有白色背景
     setWindowFlag(Qt::FramelessWindowHint);
     ui->labelPassword->setScaledContents(true); // 图片自适应label大小
     ui->labelUser->setScaledContents(true);     // 图片自适应label大小
@@ -37,10 +38,15 @@ Login::~Login()
     delete ui;
 }
 
+void Login::paintEvent(QPaintEvent *event)
+{
+    Q_UNUSED(event);
+    QPainter painter(this);
+    painter.setPen(QColor("red")); // 0x242424
+}
+
 void Login::setStyle(const QString &path)
 {
-    qDebug() << __func__;
-
     QFile file(path);
     if (file.open(QFile::ReadOnly)) {
         QTextStream stream(&file);

@@ -4,6 +4,8 @@
 #include <QWidget>
 #include <QString>
 #include <QPoint>
+#include <QPainter>
+#include <QPaintEvent>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Login; }
@@ -16,6 +18,9 @@ class Login : public QWidget
 public:
     Login(QWidget *parent = nullptr);
     ~Login();
+
+protected:
+    virtual void paintEvent(QPaintEvent *event) override;
 
 private:
     void setStyle(const QString &path);
